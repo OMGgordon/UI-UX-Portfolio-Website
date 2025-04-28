@@ -1,0 +1,60 @@
+.footer {
+  @apply bg-slate-800 dark:bg-slate-900 text-white;
+}
+
+.footer-container {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8;
+}
+
+.footer-logo {
+  @apply mb-4;
+}
+
+.footer-logo-text {
+  @apply text-2xl font-bold bg-gradient-to-r from-sky-400 to-teal-400 bg-clip-text text-transparent;
+}
+
+.footer-description {
+  @apply text-slate-300 mb-6;
+}
+
+.footer-section {
+  @apply mb-8;
+}
+
+.footer-heading {
+  @apply text-lg font-bold mb-4 text-white relative inline-block;
+}
+
+.footer-heading::after {
+  content: '';
+  @apply absolute -bottom-2 left-0 w-12 h-1 bg-gradient-to-r from-sky-500 to-teal-500;
+}
+
+.footer-links {
+  @apply space-y-2;
+}
+
+.footer-link {
+  @apply text-slate-300 hover:text-sky-400 transition-colors duration-300 flex items-center no-underline;
+}
+
+.footer-link-icon {
+  @apply mr-2;
+}
+
+.footer-bottom {
+  @apply border-t border-slate-700 pt-6 mt-8 flex flex-col md:flex-row justify-between items-center;
+}
+
+.footer-copyright {
+  @apply text-slate-400 text-sm mb-4 md:mb-0;
+}
+
+.footer-social {
+  @apply flex space-x-4;
+}
+
+.footer-social-link {
+  @apply bg-slate-700 hover:bg-sky-600 text-white p-2 rounded-full transition-colors duration-300;
+}

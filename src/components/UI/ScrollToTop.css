@@ -1,0 +1,11 @@
+.scroll-to-top {
+  @apply fixed bottom-6 right-6 bg-gradient-to-r from-sky-500 to-teal-500 text-white p-3 rounded-full shadow-lg cursor-pointer z-50 opacity-0 invisible transition-all duration-300;
+}
+
+.scroll-to-top.visible {
+  @apply opacity-100;
+}
+
+.scroll-to-top:hover {
+  @apply transform scale-110 shadow-xl;
+}

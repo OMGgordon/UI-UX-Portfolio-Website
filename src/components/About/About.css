@@ -1,0 +1,114 @@
+.about {
+  @apply bg-white dark:bg-slate-800/50;
+}
+
+.about-content {
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16;
+}
+
+.about-image-container {
+  @apply relative flex justify-center lg:justify-start;
+  height: 400px;
+}
+
+.about-image {
+  @apply rounded-lg overflow-hidden relative z-10;
+  width: 320px;
+  height: 400px;
+  background-image: url('Assets/GO.jpg');
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-pattern {
+  @apply absolute top-6 left-6 md:left-auto md:-right-6 rounded-lg z-0 bg-gradient-to-br from-sky-100 to-teal-100 dark:from-sky-900/30 dark:to-teal-900/30;
+  width: 320px;
+  height: 400px;
+}
+
+.about-text {
+  @apply flex flex-col justify-center space-y-4;
+}
+
+.about-intro {
+  @apply text-xl font-medium text-sky-600 dark:text-sky-400 mb-4;
+}
+
+.about-description, .about-approach {
+  @apply text-slate-700 dark:text-slate-300 text-lg;
+}
+
+.strengths {
+  @apply mb-16;
+}
+
+.strengths-title, .skills-title, .tools-title {
+  @apply text-2xl font-bold mb-8 relative inline-block;
+}
+
+.strengths-title::after, .skills-title::after, .tools-title::after {
+  content: '';
+  @apply absolute -bottom-2 left-0 w-16 h-1 bg-gradient-to-r from-sky-500 to-teal-500;
+}
+
+.strengths-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6;
+}
+
+.strength-card {
+  @apply bg-slate-50 dark:bg-slate-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col items-start;
+}
+
+.strength-icon {
+  @apply p-3 rounded-full bg-gradient-to-r from-sky-500/10 to-teal-500/10 text-sky-600 dark:text-sky-400 mb-4;
+}
+
+.strength-card h4 {
+  @apply text-xl font-bold mb-2 text-slate-800 dark:text-white;
+}
+
+.strength-card p {
+  @apply text-slate-600 dark:text-slate-300;
+}
+
+.skills-section {
+  @apply mb-16;
+}
+
+.skills-container {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6;
+}
+
+.skill {
+  @apply mb-4;
+}
+
+.skill-header {
+  @apply flex justify-between mb-2;
+}
+
+.skill-name {
+  @apply font-medium text-slate-800 dark:text-white;
+}
+
+.skill-percentage {
+  @apply text-sky-600 dark:text-sky-400 font-medium;
+}
+
+.skill-bar {
+  @apply w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden;
+}
+
+.skill-progress {
+  @apply h-full bg-gradient-to-r from-sky-500 to-teal-500 rounded-full;
+  transition: width 1.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.tools-grid {
+  @apply grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4;
+}
+
+.tool {
+  @apply bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg py-3 px-4 text-center shadow-sm hover:shadow-md transition-shadow duration-300 text-slate-700 dark:text-slate-300 font-medium;
+}

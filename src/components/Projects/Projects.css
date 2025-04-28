@@ -1,0 +1,43 @@
+.projects {
+  @apply bg-slate-50 dark:bg-slate-900;
+}
+
+.project-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-8 mt-12;
+}
+
+.project-card {
+  @apply bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2;
+}
+
+.project-image {
+  @apply w-full h-64 object-cover;
+}
+
+.project-content {
+  @apply p-6;
+}
+
+.project-category {
+  @apply text-sm font-medium text-sky-600 dark:text-sky-400 mb-2;
+}
+
+.project-title {
+  @apply text-2xl font-bold mb-2 text-slate-800 dark:text-white;
+}
+
+.project-description {
+  @apply text-slate-600 dark:text-slate-300 mb-4;
+}
+
+.project-tags {
+  @apply flex flex-wrap gap-2 mb-4;
+}
+
+.project-tag {
+  @apply bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 text-sm py-1 px-3 rounded-full;
+}
+
+.project-link {
+  @apply inline-flex items-center text-sky-600 dark:text-sky-400 font-medium hover:text-sky-700 dark:hover:text-sky-300 transition-colors duration-300;
+}
